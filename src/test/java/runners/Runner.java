@@ -30,7 +30,7 @@ public class Runner {
 
         dryRun: İki seçenek vardır.
         dryRun = true; derse, testimizi çalıştırmadn eksikadımları bize verir
-        dryRun = false; testlerimizi driver ile çalıştırır.
+        dryRun = false; testlerimizi driver ile çalıştırır..
 
      */
 
