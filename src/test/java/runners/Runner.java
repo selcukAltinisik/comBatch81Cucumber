@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@gp1 or @gp2",
+        tags = "@All",  //  İkitag'ı aynı anda çalıştrımak isterseniz "@gp1 or @gp2".
         dryRun = false
 )
 
