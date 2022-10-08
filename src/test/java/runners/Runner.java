@@ -19,7 +19,7 @@ public class Runner {
         Runner class'ı TestNG'deki XML mantığı ile çalışır. Çalıştırmak istediğimiz senaryolara tag belirtiriz
     ve belirttiğimiz tag'ları çalıştırır. XML'deki gibi istediğimiz testleri çalıştırmak için kullanırız.
     Runner class body'si boştur ve runner class'ını ekleyeceğimiz notasyonlar aktive eder.
-        Bu class'ta kullanacağımız 2 adet notasyon vardır...
+        Bu class'ta kullanacağımız 2 adet notasyon vardır....
         -   @RunWith(Cucumber.class)    notasyonu Runner class'ına çalışma özelliği ekler.
         Bu notasyon olduğu için Cucumber framework'umuzde Junit kullanmayı tercih ederiz.
 
