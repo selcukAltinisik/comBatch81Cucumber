@@ -11,6 +11,10 @@ import utilities.Driver;
 
 public class AmazonStepDefinition {
     AmazonPage amazonPage=new AmazonPage();
+    @Given("kullanici amazon sayfasina gider")
+    public void kullaniciAmazonSayfasinaGider() {
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+    }
 
     @Then("kullanici Nutella icin arama yapar")
     public void kullaniciNutellaIcinAramaYapar() {
@@ -29,10 +33,6 @@ public class AmazonStepDefinition {
         Driver.closeDriver();
     }
 
-    @Given("kullanici amazon anasayfasina gider")
-    public void kullaniciAmazonAnasayfasinaGider() {
-        Driver.getDriver().get(ConfigReader.getProperty("amznUrl"));
-    }
 
     @Then("kullanici Selenium icin arama yapar")
     public void kullaniciSeleniumIcinAramaYapar() {
@@ -43,7 +43,6 @@ public class AmazonStepDefinition {
     public void sonuclarinSeleniumIcerdiginiTestEder() {
         String arananKelime="Selenium";
         String actualAramaSonucStr= amazonPage.aramaSonucElementi.getText();
-
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
 
@@ -56,7 +55,6 @@ public class AmazonStepDefinition {
     public void sonuclarinIphoneIcerdiginiTestEder() {
         String arananKelime="iphone";
         String actualAramaSonucStr= amazonPage.aramaSonucElementi.getText();
-
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
 }
