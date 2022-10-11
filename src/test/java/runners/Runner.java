@@ -27,7 +27,7 @@ public class Runner {
 
     dryRun : iki seçenek vardır
     dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
-    dryRun = false; testlerimizi driver ile çalıştırır.....
+    dryRun = false; testlerimizi driver ile çalıştırır
      */
 
 }
