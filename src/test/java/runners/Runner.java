@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@Background", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
-        dryRun = true
+        tags = "@gp2 or @bunu", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        dryRun = false
 
 )
 public class Runner {
@@ -27,7 +27,7 @@ public class Runner {
 
     dryRun : iki seçenek vardır
     dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
-    dryRun = false; testlerimizi driver ile çalıştırır...
+    dryRun = false; testlerimizi driver ile çalıştırır.
      */
 
 }
