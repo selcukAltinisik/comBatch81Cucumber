@@ -1,4 +1,6 @@
+
 Feature: US005 Blue RentaCar Login
+
   Scenario: TC11 kullanici gecerli bilgilerle giris yapar
     Given kullanici "brcUrl" ana sayfasinda
     And kullanici 2 saniye bekler

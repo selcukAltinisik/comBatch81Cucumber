@@ -1,4 +1,4 @@
-@erol
+@parametre
 Feature: US002 Parametre Kullanimi
 
   Background: Ortak adim
