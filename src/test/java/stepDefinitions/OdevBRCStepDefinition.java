@@ -8,7 +8,7 @@ import pages.BRCPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class OdenBRCStepDefinition {
+public class OdevBRCStepDefinition {
 
     BRCPage brcPage=new BRCPage();
 
@@ -17,10 +17,7 @@ public class OdenBRCStepDefinition {
         Driver.getDriver().get(ConfigReader.getProperty(istenenurl));
     }
 
-    @Then("Login yazisina tiklar")
-    public void loginYazisinaTiklar() {
-        brcPage.loginYazisi.click();
-    }
+
 
     @And("{string} username girer")
     public void usernameGirer(String gecersizEmail) {
