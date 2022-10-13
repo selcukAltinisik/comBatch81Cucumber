@@ -5,11 +5,12 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import pages.BrcPage;
+
+import pages.BRCPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 public class BlueRentACarStepDefinition {
-    BrcPage brc = new BrcPage();
+    BRCPage brc = new BRCPage();
     Actions actions = new Actions(Driver.getDriver());
     @Given("kullanici {string} ana sayfasinda")
     public void kullaniciAnaSayfasinda(String istenenUrl) {
@@ -17,11 +18,11 @@ public class BlueRentACarStepDefinition {
     }
     @Then("Login yazisina tiklar")
     public void loginYazisinaTiklar() {
-        brc.login.click();
+        brc.loginYazisi.click();
     }
     @And("gecersiz username girer")
     public void gecersizUsernameGirer() {
-        brc.email.sendKeys("gecersiz@gmail.com");
+        brc.emailTextBox.sendKeys("gecersiz@gmail.com");
     }
     @And("gecersiz password girer")
     public void gecersizPasswordGirer() {
@@ -33,6 +34,6 @@ public class BlueRentACarStepDefinition {
     }
     @Then("sayfaya giris yapilamadigini kontrol eder")
     public void sayfayaGirisYapilamadiginiKontrolEder() {
-        Assert.assertTrue(brc.ikinciLogin.isDisplayed());
+        Assert.assertTrue(brc.ikinciLoginYazisi.isDisplayed());
     }
 }
