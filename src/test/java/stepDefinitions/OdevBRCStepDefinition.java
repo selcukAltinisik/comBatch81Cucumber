@@ -17,8 +17,6 @@ public class OdevBRCStepDefinition {
         Driver.getDriver().get(ConfigReader.getProperty(istenenurl));
     }
 
-
-
     @And("{string} username girer")
     public void usernameGirer(String gecersizEmail) {
         brcPage.emailTextBox.sendKeys(gecersizEmail);

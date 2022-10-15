@@ -1,6 +1,6 @@
 Feature: US008 Scenario Outline Kullanimi
   @BRC
-  Scenario Outline: : TC11 kullanici gecersiz bilgilerle giris yapar
+  Scenario Outline: TC11 kullanici gecersiz bilgilerle giris yapar
     Given kullanici "brcUrl" anasayfasina gider
     Then Login yazisina tiklar
     And "<gecersizEmail>" username girer
@@ -10,10 +10,11 @@ Feature: US008 Scenario Outline Kullanimi
     And kullanici 3 saniye bekler
     And  sayfayi kapatir
 
-    Examples: :
+    Examples:
   | gecersizEmail   | gecersizPass |
   |a@gmail.com      |    12346|
   |b@gmail.com      |    13246|
   |c@gmail.com      |    78974|
   |d@gmail.com      |    78564|
   |e@gmail.com      |    41454|
+
