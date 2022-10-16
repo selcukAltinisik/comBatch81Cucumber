@@ -20,7 +20,7 @@ public class GuruStepDefinition {
               System.out.println(guru.basliklar.get(i).getText());  //  Feature'dan gelen başlığı yazdırdık.
               index = i+1;  //  Feature'dan gelen ve i değerine eşitlediğimiz string'i aynı değere sahip sütunları da
               //    yazdırabilmek için boş bir konteynır oluşturup ona atadık. List'te index 0(sıfır)'dan başladığı için
-              //    ve webTable locate'imiz 1'den başladığı için i değerini bir arttırdık.
+              //    ve webTable locate'imiz 1'den başladığı için i değerini bir arttırdık..
               List<WebElement> sutunElement = Driver.getDriver().findElements(By.xpath("//tbody//tr//td["+index+"]"));
               //Sonrasında webTable'daki body'i locate edip eşitlediğimiz index'i başlık altındaki sutunu getirebilmesi
               // için bu liste koyduk.
