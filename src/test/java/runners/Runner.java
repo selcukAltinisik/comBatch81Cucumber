@@ -6,9 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumber-reports.html"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@guru", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        tags = "@gp5", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
         dryRun = false
 
 )
