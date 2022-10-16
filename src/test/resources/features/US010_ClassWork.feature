@@ -1,5 +1,5 @@
-@US1011ClassWork
-Feature: US1011ClassWork
+@US0010ClassWork
+Feature: US0010ClassWork
 
   Scenario: Herocap sitesi buton tarama
 
