@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@gp5", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        tags = "@web", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
         dryRun = false
 
 )
@@ -30,7 +30,7 @@ public class Runner {
 
     dryRun : iki seçenek vardır
     dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
-    dryRun = false; testlerimizi driver ile çalıştırır.
+    dryRun = false; testlerimizi driver ile çalıştırır..
      */
 
 }
