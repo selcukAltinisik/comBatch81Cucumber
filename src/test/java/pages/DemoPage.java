@@ -15,4 +15,7 @@ public class DemoPage {
 
     @FindBy (xpath = "(//*[text()='Click me'])[2]")
     public WebElement click;
+
+    @FindBy (xpath = "//*[@id='enableAfter']")
+    public WebElement enable;
 }
