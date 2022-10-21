@@ -6,3 +6,4 @@ Feature: US018 Class Work
     Given kullanici "demoqaUrl" anasayfasinda
     Then Visible After five seconds butonunun gorunur olmasini bekleyin
     And Visible After five seconds butonunun gorunur oldugunu test edin
+
