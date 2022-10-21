@@ -33,7 +33,7 @@ public class PracticeFormStepDefs {
     }
     @When("bir dosya yukler")
     public void bir_dosya_yukler() {
-        // practiceFormPage.chooseFile.sendKeys("C:\\Users\\mua\\Desktop\\test.txt");
+        // practiceFormPage.chooseFile.sendKeys("C:\Users\selcu\Desktop\test.txt");
 
         String homeDirectory= System.getProperty("user.home");
         String filePath =homeDirectory+"/Desktop/test.txt";
