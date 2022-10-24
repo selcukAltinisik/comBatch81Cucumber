@@ -2,7 +2,7 @@
 Feature: medunna login negative test
 
   Scenario Outline: Negative login test
-  # https://medunna.com/
+  #. https://medunna.com/
     Given kullanici "https://medunna.com/" sayfasina giderr
     When login olmak icin signin e tiklar
     And username icin "<username>" kullanici adini gonderir
