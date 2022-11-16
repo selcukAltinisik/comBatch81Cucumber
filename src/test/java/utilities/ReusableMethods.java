@@ -42,7 +42,7 @@ public class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return  wElementSS;
     }
-    //========Switching Window(Pencereler arası geçiş)=====//
+    //========Switching Window(Pencereler arası geçiş)=====//.
     public static void switchToWindow(String targetTitle) {
         String origin = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
