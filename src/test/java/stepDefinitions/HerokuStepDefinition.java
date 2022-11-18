@@ -34,7 +34,7 @@ public class HerokuStepDefinition {
         assert herokuPages.deleteButton.isDisplayed();
         //Bu sekilde de kullanilabiliyor
         //herokuPages.deleteButton.isDisplayed() sonuna nokta koyarsak
-        // yukardaki sekilde de assert kullanimini assert true olarak kullanabiliriz
+        // yukardaki sekilde de assert kullanimini assert true olarak kullanabiliriz.
         //Eger assert equals kullanacaksak   assert herokuPages.addRemovesElementsText.getText().equals("Add/Remove Elements");
         // bu method sekli sadece true / onune unlem koyarsak false seklinde kullanilir
         // Assert.assertTrue(herokuPages.deleteButton.isDisplayed());
