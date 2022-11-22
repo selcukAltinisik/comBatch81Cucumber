@@ -1,5 +1,5 @@
 
-@Background
+@Backgroundd
 Feature: US001 Background Kullanimi
 
   Background: Ortak adimlar
