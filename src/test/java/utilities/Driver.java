@@ -23,7 +23,7 @@ public class Driver {
         için yeni bir pencere(driver) açıyor. Eğer driver'a bir değer atanmamışsa yani driver==null ise
         bir kere driver'i çalıştır diyerek bir kere if içini çalıştıracak. Ve driver artık bir kere
         çalıştığı için ve değer atandığı için null olmayacak ve direk return edecek ve diğer
-        teslerimiz aynı pencere(driver) üzerinde çalışacak...
+        teslerimiz aynı pencere(driver) üzerinde çalışacak..
          */
 
 
